@@ -1,0 +1,30 @@
+<head>
+    <script src="websocket.js"></script>
+</head>
+<body>
+<p>websocket test</p>
+</br> </br>
+Connect to WS
+</br> </br>
+<input type=“text" id="ws" value="ws://10.3.196.141:2053"/>
+<button onclick="InitWebsocket(ws.value);"> Connect</button>
+</br> </br>
+</br> </br>
+groupId <input type="text" id="groupId"/>
+<button onclick="SettingListReq(groupId.value);">SettingListReq</button>
+</br> </br>
+</br> </br>
+Ids <input type="text" id="idsForSettingInfo" placeholder="1,2,3"/>
+<button onclick="SettingInfoReq(idsForSettingInfo.value);">SettingInfoReq</button>
+</br> </br>
+</br> </br>
+Ids <input type="text" id="idsForSettings" placeholder="1,2,3""/>
+Register <input type="checkbox" id="isRegisterSetting"/>
+<button onclick="SettingReq(idsForSettings.value, isRegisterSetting.checked);">SettingReq</button>
+</br> </br>
+</br> </br>
+id <input type="text" id="idForSetting"/>
+value <input type="text" id="valueForSetting"/>
+<button onclick="Setting(idForSetting.value,valueForSetting.value);">Setting</button>
+</body>
+
